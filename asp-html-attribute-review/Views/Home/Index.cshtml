@@ -3,6 +3,9 @@
 }
 
 <div class="text-center">
-    <h1 class="display-4">Welcome</h1>
-    <p>Learn about <a href="https://docs.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
+    <h1>Hello ASP world</h1>
+    <p>Below is an example of an anchor tag with some asp specific attributes that determine its functionality!</p>
+    @*essentially the same as putting href="/Example"*@
+    <a asp-controller="Example" asp-action="Index">Link to /example/index page!</a>
+    <a asp-controller="Example" asp-action="Data" asp-route-foo="HelloWorld">Link to /example/data page!</a>
 </div>
